@@ -17,11 +17,26 @@ Proyecto de Eclipse. Cada ejercicio es una clase en `src/tema1/` con su propio `
 | Triángulo de Pascal (método de combinaciones) | `TrianguloPascal` |
 | Algoritmo de la amistad de Sheldon (diagrama de flujo a Java) | `AmistadSheldon` |
 
+## Repaso para el Parcial 1
+
+Ejercicios del estilo del examen de 2025-26 (filtros sobre listas de objetos, parseo de Strings, arrays), con contexto de esgrima y entrenamiento. Están en `src/repasoparcial1/`.
+
+| Ejercicio | Clase |
+|---|---|
+| A. Filtro por duración mínima | `MinDurationFilter` |
+| B. Validar la consistencia de un CSV de asaltos de esgrima | `Competicion` |
+| C. Filtro combinado con dos condiciones | `HighVolumeFilter` |
+| D. Posición mínima en una matriz irregular | `MatrizIrregular` |
+| E. Clase `Asalto` con validación en el constructor | `Asalto` |
+
+Clases de apoyo: `Filter`, `TrainingSession`, `Exercise`.
+
 ## Cómo ejecutarlo
 
 - **Eclipse:** File > Import > Existing Projects into Workspace, y Run As > Java Application sobre cualquier clase.
 - **Terminal:**
   ```
-  javac -d bin src/tema1/*.java
+  javac -d bin src/tema1/*.java src/repasoparcial1/*.java
   java -cp bin tema1.TrianguloPascal
+  java -cp bin repasoparcial1.Competicion
   ```
